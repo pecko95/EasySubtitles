@@ -91,6 +91,14 @@ button:hover{
 .seasonAndEpisode input{
     width: 60px;
 }
+.button{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.button a{
+    margin-left: 10px;
+}
 @keyframes warning {
     10%, 90% {
       transform: translate3d(-1px, 0, 0);
