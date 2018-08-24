@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EasySubtitles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="icon" href="images/icon_default.png">
+</head>
+<body>
+    <header>
+        <h1>EasySubtitles <span><img src="images/glasses.svg" alt="logo" width="35px"></span></h1>
+        <p>Get subtitles for a movie or tv show, fast and easy.</p>
+    </header>
+    <p>Movies:</p>
+    <input type="text" id="movieInputField" placeholder="Movie title.." autocomplete="off">
+    <div class="tvShowsInput">
+        <p>TV Shows:</p>
+        <input type="text" id="seriesInputField" placeholder="Tv Show name..">
+        <div class="seasonAndEpisode">
+            <input type="text" id="season" placeholder="Season" disabled>
+            <input type="text" id="episode" placeholder="Episode" disabled>
+        </div>
+        <button id="submitSearch">Go !</button>
+    </div>
+
+    <!-- Display warning to notify the user that the input field is empty -->
+    <div class="warning">
+        <i class="material-icons">error</i>
+        <p>You must enter the movie or tv show title in the input field before searching for a subtitle!</p>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
